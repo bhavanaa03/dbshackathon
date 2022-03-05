@@ -1,0 +1,83 @@
+<html>
+<style>
+body{
+margin-top:150px;
+margin-left:100px;
+margin-right:100px;
+background-color:pink;
+}
+</style>
+<body align="center">
+<form action="msg.html">
+  <fieldset>
+    <legend>For person</legend>
+    <label>
+      Name
+      <input type="text" name="name" required><br>
+    </label>
+    <div class="two-cols">
+      <label>
+        Email address
+        <input type="email" name="email" required><br>
+      </label>
+      <label>
+        Phone number
+        <input type="tel" name="phone"><br>
+      </label>
+    </div>
+  </fieldset><br><br>
+  <fieldset>
+    <legend>Appointment request</legend>
+    <div class="two-cols">
+      <label>
+        Date
+        <input type="date" name="Appointment request" required>
+      </label>
+      <div class="inline">
+        <label>
+          <input type="hidden" name="Morning desired" value="no">
+          <input type="checkbox" name="Morning desired" value="yes">
+          10:00AM-10:30AM
+<input type="checkbox" name="Morning desired" value="yes">
+          11:00AM-11:30AM
+<input type="checkbox" name="Morning desired" value="yes">
+          11:30AM-12:00PM<br>
+
+        </label>
+        <label>
+          <input type="hidden" name="Afternoon desired" value="no">
+          <input type="checkbox" name="Afternoon desired" value="yes">
+          01:00PM-02:00PM
+<input type="checkbox" name="Afternoon desired" value="yes">
+          02:00PM-03:00PM
+<input type="checkbox" name="Afternoon desired" value="yes">
+          03:00PM-04:00PM
+<input type="checkbox" name="Afternoon desired" value="yes">
+          04:00PM-05:00PM
+<input type="checkbox" name="Afternoon desired" value="yes">
+          05:00PM-06:00PM
+
+
+
+        </label>
+      </div>
+    </div>
+    <p>Confirmation requested by</p>
+    <div class="inline">
+      <label>
+        <input type="radio" name="Confirmation requested by" value="email" checked>
+        Email
+      </label>
+      <label>
+        <input type="radio" name="Confirmation requested by" value="phone">
+        Phone call
+      </label>
+    </div>
+  </fieldset>
+  <div class="btns">
+    <input type="text" name="_gotcha" value="" style="display:none;"><br><br>
+    <input type="submit" value="Submit request">
+  </div>
+</form>
+</body>
+</html>
